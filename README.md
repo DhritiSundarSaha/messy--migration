@@ -19,22 +19,21 @@ Welcome! This project is a refactored version of a legacy user management API. T
 
 messy-migration/
 │
-├── app/ # Main Flask application
-│ ├── init.py # Application factory (create_app)
-│ ├── routes.py # API route definitions
-│ ├── db.py # DB connection and session management
-│ └── schema.sql # SQL schema for DB tables
+├── app/                  # Main Flask application
+│   ├── __init__.py       # Application factory (create_app)
+│   ├── routes.py         # API route definitions
+│   ├── db.py             # DB connection and session management
+│   └── schema.sql        # SQL schema for DB tables
 │
-├── tests/ # Test suite
-│ └── test_api.py # Pytest API tests
+├── tests/                # Test suite
+│   └── test_api.py       # Pytest API tests
 │
-├── app.py # App entry point
-├── init_db.py # DB initialization script
-├── config.py # Configuration settings
-├── requirements.txt # Python dependencies
-├── CHANGES.md # Detailed refactoring documentation
-└── README.md # This file
-
+├── app.py                # App entry point
+├── init_db.py            # DB initialization script
+├── config.py             # Configuration settings
+├── requirements.txt      # Python dependencies
+├── CHANGES.md            # Detailed refactoring documentation
+└── README.md             # This file
 
 ---
 
