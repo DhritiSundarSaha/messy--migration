@@ -17,6 +17,8 @@ Welcome! This project is a refactored version of a legacy user management API. T
 
 ## 📁 File Structure
 
+
+```text
 messy-migration/
 │
 ├── app/                  # Main Flask application
