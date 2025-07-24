@@ -4,18 +4,27 @@ In accordance with the submission guidelines, I have pushed the complete refacto
 * A full breakdown of the changes I made and the reasoning behind them.
 * The assumptions and trade-offs considered during the process.
 * Potential improvements that could be made with additional time.
+**Project Architecture**
+The project has been refactored to use the Application Factory pattern, which promotes a modular and scalable structure. This separates concerns, making the codebase cleaner and easier to maintain and test.
 
-You can access the repository with all the necessary files here:
-https://github.com/DhritiSundarSaha/messy--migration
-
-I trust this meets all the requirements outlined in the assignment. Thank you for your time and consideration.
-
-Sincerely,
-
-Dhriti Sundar Saha
-
----
----
+*The file structure is as follows:*
+messy-migration/
+│
+├── app/                  # Main Flask application package
+│   ├── __init__.py       # Contains the application factory (create_app)
+│   ├── routes.py         # Defines all API endpoints (views)
+│   ├── db.py             # Manages the database connection and session
+│   └── schema.sql        # The SQL schema for creating the database tables
+│
+├── tests/                # Contains all application tests
+│   └── test_api.py       # Pytest suite for the API
+│
+├── app.py                # The entry point to start the application
+├── init_db.py            # Script to initialize the development database
+├── config.py             # Application configuration settings
+├── requirements.txt      # Project dependencies
+├── CHANGES.md            # Detailed log of all refactoring changes
+└── README.md             # This file
 
 # Code Refactoring Challenge
 
